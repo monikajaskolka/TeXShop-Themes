@@ -64,9 +64,19 @@ defaults write TeXShop markerblue ${blue[2]}
 echo Changing \index terms colour...
 # Note: To enable this colouring, customize the TeXShop toolbar by adding the
 # ColorIndex checkbox, and check it.
-defaults write TeXShop indexred ${green_1[0]}
-defaults write TeXShop indexgreen ${green_1[1]}
-defaults write TeXShop indexblue ${green_1[2]}
+defaults write TeXShop indexred ${orange[0]}
+defaults write TeXShop indexgreen ${orange[1]}
+defaults write TeXShop indexblue ${orange[2]}
+
+echo Changing highlighted {} colour...
+defaults write TeXShop highlightBracesRed ${green_1[0]}
+defaults write TeXShop highlightBracesGreen ${green_1[1]}
+defaults write TeXShop highlightBracesBlue ${green_1[2]}
+
+echo Changing highlighted text colour between {} ...
+defaults write TeXShop highlightContentRed ${brown[0]}
+defaults write TeXShop highlightContentGreen ${brown[1]}
+defaults write TeXShop highlightContentBlue ${brown[2]}
 
 # Change Other Options
 echo Changing transparencies of windows...
