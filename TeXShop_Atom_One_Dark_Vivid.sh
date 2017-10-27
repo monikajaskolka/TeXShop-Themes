@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Theme for TeXShop inspried by the Atom One Dark Vivid theme
-# Monika Bialy
+# Monika Jaskolka
 # Dec 28, 2016
 
-# Colours from the theme's colors.less file
+# Colours taken from the theme's colors.less file
 # DESCRIPTION	HEX	RBG
 # ---------------------------------------
 # cyan      #7FE2F7 0.498 0.886 0.969
@@ -62,9 +62,9 @@ defaults write TeXShop commentgreen ${grey_2[1]}
 defaults write TeXShop commentblue ${grey_2[2]}
 
 echo Changing cursor colour...
-defaults write TeXShop insertionpoint_R ${purple[0]}
-defaults write TeXShop insertionpoint_G ${purple[1]}
-defaults write TeXShop insertionpoint_B ${purple[2]}
+defaults write TeXShop insertionpoint_R ${blue_2[0]}
+defaults write TeXShop insertionpoint_G ${blue_2[1]}
+defaults write TeXShop insertionpoint_B ${blue_2[2]}
 
 echo Changing {} and $ colour...
 defaults write TeXShop markerred ${orange_2[0]}
@@ -77,6 +77,18 @@ echo Changing \index terms colour...
 defaults write TeXShop indexred ${green[0]}
 defaults write TeXShop indexgreen ${green[1]}
 defaults write TeXShop indexblue ${green[2]}
+
+echo Changing highlighted {} colour...
+# highlighting occurs when cursor is near brackets, or when a bracket is closed
+defaults write TeXShop highlightBracesRed ${purple[0]}
+defaults write TeXShop highlightBracesGreen ${purple[1]}
+defaults write TeXShop highlightBracesBlue ${purple[2]}
+
+echo Changing highlighted background colour between {} ...
+# highlighting occurs when cursor is near brackets, or when a bracket is closed
+defaults write TeXShop highlightContentRed ${grey_2[0]}
+defaults write TeXShop highlightContentGreen ${grey_2[1]}
+defaults write TeXShop highlightContentBlue ${grey_2[2]}
 
 # Change Other Options
 echo Changing transparencies of windows...
