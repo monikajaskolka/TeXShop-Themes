@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Theme for TeXShop inspried by the Sublime Monokai theme
-# Monika Bialy
+# Monika Jaskolka
 # Jan 10, 2017
 
 # Colours from the theme
@@ -69,11 +69,13 @@ defaults write TeXShop indexgreen ${orange[1]}
 defaults write TeXShop indexblue ${orange[2]}
 
 echo Changing highlighted {} colour...
+# highlighting occurs when cursor is near brackets, or when a bracket is closed
 defaults write TeXShop highlightBracesRed ${green_1[0]}
 defaults write TeXShop highlightBracesGreen ${green_1[1]}
 defaults write TeXShop highlightBracesBlue ${green_1[2]}
 
-echo Changing highlighted text colour between {} ...
+echo Changing highlighted background colour between {} ...
+# highlighting occurs when cursor is near brackets, or when a bracket is closed
 defaults write TeXShop highlightContentRed ${brown[0]}
 defaults write TeXShop highlightContentGreen ${brown[1]}
 defaults write TeXShop highlightContentBlue ${brown[2]}
