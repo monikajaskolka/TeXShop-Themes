@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[obeyspaces]{url}
+\usepackage{makeidx}
+\makeindex
+
+\begin{document}
+
+\title{Demonstration of TeXShop Theme}
+\author{Monika Jaskolka}
+\date{\today}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abstract
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+This article is designed to illustrate how the themes look after they are applied. I will also introduce the themes and explain how to use them.
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Intro
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+TeXShop is a free \LaTeX{} and \TeX{} editor/previewer for OS X. It can be downloaded from \url{http://pages.uoregon.edu/koch/texshop/}. The default black and white colour scheme is quite bland and can be straining on the eyes, so I have created some custom themes. Currently there are $2$ themes available, which are based on popular themes available in text editors such as Atom and Sublime. They can be downloaded from GitHub (\url{https://github.com/monikajaskolka/TeXShop-Themes}).
+
+The theme modifies the look of the following \LaTeX() elements:
+
+\begin{enumerate}
+		\item background colour
+		\item text colour (e.g. such as \ldots)
+		\item keyword colour 
+		\item comment colour % (e.g. this comment)
+		\item cursor colour 
+		\item \{\} and \$ symbols {} $ $
+		\item index terms (e.g. \index{Example})
+		\item colour of \{\} and enclosed background when highlighted (cursor is near bracket)
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Installation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{How to Use}
+This section describes how to apply the themes to TeXShop. Ensure that you have downloaded the files from GitHub (\url{https://github.com/monikajaskolka/TeXShop-Themes}). Then, follow the instructions below.
+
+\begin{enumerate}
+	\item Open Terminal
+	\item Unzip package: \url{unzip ~/Downloads/TeXShop-Themes-master.zip}
+	\item Apply theme: \url{~/TeXShop-Themes-master/TeXShop_Sublime_Monokai.sh}
+	\item Wait for ``Done!" message to be displayed in Terminal
+	\item Open TeXShop
+\end{enumerate}
+\end{document}
