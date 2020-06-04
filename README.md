@@ -16,7 +16,7 @@ Inspired by Monokai (default) theme for [Sublime Text](https://www.sublimetext.c
 ## TeXShop 4.08 and later:
 1. Download
 2. Unzip: `unzip ~/Downloads/TeXShop-Themes-master.zip`
-3. Copy the .plist files into `~/Library/TeXShop/Themes`
+3. Copy the .plist files into `~/Library/TeXShop/Themes`: `cp TeXShop-Themes-master/*.plist ~/Library/TeXShop/Themes`
 4. Open TeXShop and go to `Preferences > Themes`
 5. Select the theme from the Themes drop down menus and press OK
 
